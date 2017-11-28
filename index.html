@@ -27,7 +27,8 @@
       font-size: 12px;
       height: 55px;
       padding-top: 20px;
-      margin-top: 10px;
+      margin-top: 0px;
+      margin-bottom: 0px;
     }
 
     h2 {
@@ -37,13 +38,38 @@
     h3 {
       color: #4aaaa5;
       font-size: 20px;
-
     }
+
+    .bd {
+      border: 2px;
+      border-style: solid;
+      border-color: #e1e1e1;
+    }
+
+    .bdb {
+      border: 0px;
+      border-bottom: 2px;
+      border-style: solid;
+      border-color: #e1e1e1;
+      margin: 0px;
+      padding: 0px;
+    }
+
+    .bdt {
+        border: 0px;
+        border-top: 2px;
+        border-style: solid;
+        border-color: #e1e1e1;
+        margin: 0px;
+        padding: 0px;
+      }
+
+
   </style>
 
-  <nav class="navbar navbar-light bg-light">
+  <nav class="navbar navbar-light bg-light bdb">
     <div class="container">
-      <div class="row">
+      <div class="row align-items-center">
         <div class="col-md-6">
           <span class="navbar-brand mb-0 h1 p-3 mb-2 BG1 text-white">Jean Tzintzun</span>
         </div>
@@ -64,17 +90,17 @@
           </div>
         </div>
   </nav>
-
+<br>
 
   <div class="container">
     <div class="row">
-      <div class="col-md-8">
-        <div class="page-header">
+      <div class="col-xs-12 col-sm-12 col-md-8 col-l-8 col-xl-8 bd">
+        <div class="page-header bdb">
           <h2>About Me</h2>
         </div>
         <div class="row">
           <div class="col-md-12">
-            <img src="assets/images/download.jpg" alt="JeanTzintzun" class="rounded float-left" class="margin-left =5px">
+            <img src="assets/images/download.jpg" alt="JeanTzintzun" class=" img-thumbnail rounded float-left">
             <div class="caption">
               <p>Experienced IT professional with a track record of saving employers’ time and money by building relationships and increasing IT system reliability ready to continue career progression into operations management. </p>
               <p>Broad-based knowledge of a variety of software, hardware, and IT infrastructure platforms. Great ability to turn that knowledge into workable solutions for employers, colleagues, and end-users to provide concrete benefits and solve problems.</p>
@@ -82,23 +108,28 @@
           </div>
         </div>
       </div>
-      <div class="col-xs-12 col-sm-12 col-md-4 col-l-4 col-xl-4 ">
+      <div class="col-md-4">
         <div class="panel panel-default">
-          <div class="panel-heading">
-            <h3 class="panel-title text-center">Connect with Me</h3>
+          <div class="panel-heading bd">
+            <h3 class="panel-title text-center bdb">Connect with Me</h3>
             <div class="panel-body row">
               <div class="col-md-4">
-                <a href="https://jtzintzun.github.io/Basic-Portfolio/"><img src="assets/images/github.png" alt="github" class="align_icons"></a>
+                <a href="https://jtzintzun.github.io/Basic-Portfolio/"><img src="assets/images/github.png" alt="github"  class="rounded mx-auto d-block"></a>
               </div>
               <div class="col-md-4">
-                <a href="https://www.linkedin.com/in/jtzintzun/"><img src="assets/images/Linkedin.png" alt="Linkedin"class="align_icons"></a></a>
+                <a href="https://www.linkedin.com/in/jtzintzun/"><img src="assets/images/Linkedin.png" alt="Linkedin" class="rounded mx-auto d-block"></a>
               </div>
               <div class="col-md-4">
-                <img src="assets/images/Stack.png" alt="Stack" class="align_icons"></a>
+                <img src="assets/images/Stack.png" alt="Stack" class="rounded mx-auto d-block"></a>
               </div>
             </div>
           </div>
         </div>
+      </div>
+    </div>
+    <div class="row">
+      <div>
+        <br>
       </div>
     </div>
   </div>
@@ -111,6 +142,6 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
 
 </body>
-<nav class="navbar sticky-top navbar-light">
+<nav class="navbar sticky-top navbar-light bdt">
   <h6 class="BG2 text-center">© Copyright 2017 JeanTzintzun</h6>
 </nav>
