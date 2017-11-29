@@ -15,7 +15,7 @@
 <!--/Body///////////////////////////////////////////////////////////////-->
 
 <body>
-
+  <!--/styles//////-->
   <style media="screen">
     .BG1 {
       background-color: #4aaaa5;
@@ -33,41 +33,60 @@
 
     h2 {
       color: #4aaaa5;
+      font-family: 'Georgia', Times, Times New Roman, serif;
+      padding-bottom: 0px;
+      font-size: 25px;
     }
 
     h3 {
       color: #4aaaa5;
       font-size: 20px;
+      font-family: 'Georgia', Times, Times New Roman, serif;
+
     }
 
-    .bd {
+    a {
+      color: #b1aca7;
+      font-size: 15px;
+      font-family: Arial;
+    }
+
+    p {
+      font-size: 16px;
+      font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+      color: #b0b1b1;
+      line-height: 26px;
+    }
+
+    .border {
       border: 2px;
       border-style: solid;
       border-color: #e1e1e1;
+      padding: 15px;
     }
 
-    .bdb {
+    .border_bottom {
       border: 0px;
-      border-bottom: 2px;
+      border-bottom: 3px;
+      border-style: solid;
+      border-color: #e1e1e1;
+      margin: 0px;
+      margin-bottom: 10px;
+    }
+
+    .border_top {
+      border: 0px;
+      border-top: 2px;
       border-style: solid;
       border-color: #e1e1e1;
       margin: 0px;
       padding: 0px;
     }
 
-    .bdt {
-        border: 0px;
-        border-top: 2px;
-        border-style: solid;
-        border-color: #e1e1e1;
-        margin: 0px;
-        padding: 0px;
-      }
-
-
   </style>
 
-  <nav class="navbar navbar-light bg-light bdb">
+  <!--/Navegation Bar//////-->
+  <nav class="navbar navbar-light bg-light border_bottom">
     <div class="container">
       <div class="row align-items-center">
         <div class="col-md-6">
@@ -86,21 +105,23 @@
             <div class="col-md-3">
               <a href="contact.html">Contact</a>
             </div>
-
           </div>
         </div>
+      </div>
+    </div>
   </nav>
-<br>
+  <br>
+  <!--/Main container//////-->
 
   <div class="container">
     <div class="row">
-      <div class="col-xs-12 col-sm-12 col-md-8 col-l-8 col-xl-8 bd">
-        <div class="page-header bdb">
+      <div class="col-xs-12 col-sm-12 col-md-8 col-l-8 col-xl-8 border">
+        <div class="page-header border_bottom">
           <h2>About Me</h2>
         </div>
         <div class="row">
           <div class="col-md-12">
-            <img src="assets/images/download.jpg" alt="JeanTzintzun" class=" img-thumbnail rounded float-left">
+            <img src="assets/images/download.jpg" alt="JeanTzintzun" class=" img-thumbnail rounded float-left img-fluid max-width: 100% height: auto">
             <div class="caption">
               <p>Experienced IT professional with a track record of saving employers’ time and money by building relationships and increasing IT system reliability ready to continue career progression into operations management. </p>
               <p>Broad-based knowledge of a variety of software, hardware, and IT infrastructure platforms. Great ability to turn that knowledge into workable solutions for employers, colleagues, and end-users to provide concrete benefits and solve problems.</p>
@@ -108,19 +129,22 @@
           </div>
         </div>
       </div>
+
+      <!--/side bar//////-->
+
       <div class="col-md-4">
         <div class="panel panel-default">
-          <div class="panel-heading bd">
-            <h3 class="panel-title text-center bdb">Connect with Me</h3>
+          <div class="panel-heading border">
+            <h3 class="panel-title text-center border_bottom">Connect with Me</h3>
             <div class="panel-body row">
               <div class="col-md-4">
-                <a href="https://jtzintzun.github.io/Basic-Portfolio/"><img src="assets/images/github.png" alt="github"  class="rounded mx-auto d-block"></a>
+                <a href="https://jtzintzun.github.io/Basic-Portfolio/"><img src="assets/images/github.png" alt="github"  class="rounded mx-auto d-block img-fluid"></a>
               </div>
               <div class="col-md-4">
-                <a href="https://www.linkedin.com/in/jtzintzun/"><img src="assets/images/Linkedin.png" alt="Linkedin" class="rounded mx-auto d-block"></a>
+                <a href="https://www.linkedin.com/in/jtzintzun/"><img src="assets/images/Linkedin.png" alt="Linkedin" class="rounded mx-auto d-block img-fluid"></a>
               </div>
               <div class="col-md-4">
-                <img src="assets/images/Stack.png" alt="Stack" class="rounded mx-auto d-block"></a>
+                <img src="assets/images/Stack.png" alt="Stack" class="rounded mx-auto d-block img-fluid"></a>
               </div>
             </div>
           </div>
@@ -142,6 +166,6 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
 
 </body>
-<nav class="navbar sticky-top navbar-light bdt">
+<nav class="navbar sticky-top navbar-light border_top">
   <h6 class="BG2 text-center">© Copyright 2017 JeanTzintzun</h6>
 </nav>

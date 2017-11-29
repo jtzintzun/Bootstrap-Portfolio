@@ -15,7 +15,7 @@
 <!--/Body///////////////////////////////////////////////////////////////-->
 
 <body>
-
+  <!--/styles//////-->
   <style media="screen">
     .BG1 {
       background-color: #4aaaa5;
@@ -27,23 +27,70 @@
       font-size: 12px;
       height: 55px;
       padding-top: 20px;
-      margin-top: 10px;
+      margin-top: 0px;
+      margin-bottom: 0px;
     }
 
     h2 {
       color: #4aaaa5;
+      font-family: 'Georgia', Times, Times New Roman, serif;
+      padding-bottom: 0px;
+      font-size: 25px;
     }
 
     h3 {
       color: #4aaaa5;
       font-size: 20px;
+      font-family: 'Georgia', Times, Times New Roman, serif;
+      padding-bottom: 10px;
 
     }
+
+    a {
+      color: #b1aca7;
+      font-size: 15px;
+      font-family: Arial;
+    }
+
+    p {
+      font-size: 16px;
+      font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+      color: #b0b1b1;
+      line-height: 26px;
+    }
+
+    .border {
+      border: 2px;
+      border-style: solid;
+      border-color: #e1e1e1;
+      padding: 15px;
+    }
+
+    .border_bottom {
+      border: 0px;
+      border-bottom: 3px;
+      border-style: solid;
+      border-color: #e1e1e1;
+      margin: 0px;
+      margin-bottom: 10px;
+    }
+
+    .border_top {
+      border: 0px;
+      border-top: 2px;
+      border-style: solid;
+      border-color: #e1e1e1;
+      margin: 0px;
+      padding: 0px;
+    }
+
+
   </style>
 
-  <nav class="navbar navbar-light bg-light">
+  <!--/Navegation Bar//////-->
+  <nav class="navbar navbar-light bg-light border_bottom">
     <div class="container">
-      <div class="row">
+      <div class="row align-items-center">
         <div class="col-md-6">
           <span class="navbar-brand mb-0 h1 p-3 mb-2 BG1 text-white">Jean Tzintzun</span>
         </div>
@@ -60,49 +107,53 @@
             <div class="col-md-3">
               <a href="contact.html">Contact</a>
             </div>
-
           </div>
         </div>
+      </div>
+    </div>
   </nav>
+  <br>
 
+  <!--/Main container//////-->
+  
   <div class="container">
     <div class="row">
-      <div class="col-xs-12 col-sm-12 col-md-8 col-l-8 col-xl-8 ">
-        <div class="page-header">
+      <div class="col-xs-12 col-sm-12 col-md-8 col-l-8 col-xl-8 border">
+        <div class="page-header border_bottom">
           <h2>Portfolio</h2>
         </div>
         <div class="row">
           <div class="col-xs-12 col-sm-12 col-md-6 col-l-6 col-xl-6 ">
-            <img src="assets/images/iPad.jpg" alt="iPad">
-            <div class="caption">
+            <img src="assets/images/iPad.jpg" alt="iPad" class="rounded mx-auto d-block img-fluid">
+            <div class="caption text-center">
               <h6><span>Hangman</samp>
             </div>
           </div>
           <div class="col-xs-12 col-sm-12 col-md-6 col-l-6 col-xl-6 ">
-          <img src="assets/images/turntable.jpg" alt="turntable">
-            <div class="caption">
+          <img src="assets/images/turntable.jpg" alt="turntable" class="rounded mx-auto d-block img-fluid">
+            <div class="caption text-center">
              <h6><span>RPG Game</samp>
             </div>
           </div>
         </div>
         <div class="row">
           <div class="col-xs-12 col-sm-12 col-md-6 col-l-6 col-xl-6 ">
-          <img src="assets/images/headphones.jpg" alt="JeanTzintzun">
-          <div class="caption">
+          <img src="assets/images/headphones.jpg" alt="JeanTzintzun" class="rounded mx-auto d-block img-fluid">
+          <div class="caption text-center">
               <h6><span>Trivia Games</samp>
             </div>
           </div>
           <div class="col-xs-12 col-sm-12 col-md-6 col-l-6 col-xl-6 ">
-              <img src="assets/images/iPhone.jpg" alt="JeanTzintzun">
-              <div class="caption">
+              <img src="assets/images/iPhone.jpg" alt="JeanTzintzun" class="rounded mx-auto d-block img-fluid">
+              <div class="caption text-center">
               <h6><span>Rutgers Info Widget</samp><h6>
             </div>
           </div>
         </div>
         <div class="row">
           <div class="col-xs-12 col-sm-12 col-md-6 col-l-6 col-xl-6 ">
-              <img src="assets/images/ledtv.jpg" alt="JeanTzintzun">
-              <div class="caption">
+              <img src="assets/images/ledtv.jpg" alt="JeanTzintzun" class="rounded mx-auto d-block img-fluid">
+              <div class="caption text-center">
             <h6><span>Rock Paper Scissors</samp><h6>
             </div>
           </div>
@@ -111,35 +162,42 @@
           </div>
         </div>
 
-      <div class="col-md-4">
-        <div class="panel panel-default">
-          <div class="panel-heading">
-            <h3 class="panel-title text-center">Connect with Me</h3>
-            <div class="panel-body row">
-              <div class="col-md-4">
-                <a href="https://jtzintzun.github.io/Basic-Portfolio/"><img src="assets/images/github.png" alt="github" class="align_icons"></a>
-              </div>
-              <div class="col-md-4">
-                <a href="https://www.linkedin.com/in/jtzintzun/"><img src="assets/images/Linkedin.png" alt="Linkedin"class="align_icons"></a></a>
-              </div>
-              <div class="col-md-4">
-                <img src="assets/images/Stack.png" alt="Stack" class="align_icons"></a>
+        <!--/side bar//////-->
+
+        <div class="col-md-4">
+          <div class="panel panel-default">
+            <div class="panel-heading border">
+              <h3 class="panel-title text-center border_bottom">Connect with Me</h3>
+              <div class="panel-body row">
+                <div class="col-md-4">
+                  <a href="https://jtzintzun.github.io/Basic-Portfolio/"><img src="assets/images/github.png" alt="github"  class="rounded mx-auto d-block img-fluid"></a>
+                </div>
+                <div class="col-md-4">
+                  <a href="https://www.linkedin.com/in/jtzintzun/"><img src="assets/images/Linkedin.png" alt="Linkedin" class="rounded mx-auto d-block img-fluid"></a>
+                </div>
+                <div class="col-md-4">
+                  <img src="assets/images/Stack.png" alt="Stack" class="rounded mx-auto d-block img-fluid"></a>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
+      <div class="row">
+        <div>
+          <br>
+        </div>
+      </div>
     </div>
-    </div>
 
-  <!-- Optional JavaScript -->
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
 
-</body>
-<nav class="navbar sticky-top navbar-light">
-  <h6 class="BG2 text-center">© Copyright 2017 JeanTzintzun</h6>
-              </nav>
+  </body>
+  <nav class="navbar sticky-top navbar-light border_top">
+    <h6 class="BG2 text-center">© Copyright 2017 JeanTzintzun</h6>
+  </nav>
